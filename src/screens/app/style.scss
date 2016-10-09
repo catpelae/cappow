@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial);
 body {
     background: #fff;
     font-family: 'Helvetica Neue', helvetica, sans-serif;
@@ -6,15 +7,15 @@ body {
 }
 
 h1 {
-    font-family: 'Verdana';
-    font-size: 60px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
 }
 
 h2 {
-  font-family: 'Arial';
-  font-size: 35px;
+  font-family: 'Questrial';
+  font-size: 28px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -23,7 +24,7 @@ h2 {
 
 h3 {
   font-family: 'Arial';
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -31,7 +32,7 @@ h3 {
 }
 
 h4 {
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: 'Arial';
     font-size: 24px;
     font-weight: 500;
@@ -70,9 +71,7 @@ p {
 
 :global {
     .header {
-        h1 {
-            text-transform: uppercase;
-        }
+        
         padding: 15px;
         height: 150px;
         text-align: center;

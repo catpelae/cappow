@@ -69,7 +69,7 @@ export default class Start extends Component {
         return (
             <div className={ styles.main }>
                 <div className="header">
-                    <h1>Weather App</h1>
+                    <h1>CappaW</h1>
                     <h2>A Comparative weather app</h2>
                 </div>
                 <div className={ styles.searchComponents}>

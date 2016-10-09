@@ -2,7 +2,7 @@
     background-color: #FFF;
     ul {
         list-style-position: inside;
-        list-style-type: disc;
+        list-style-type: none;
     }
     .searchComponents {
         display: flex;
@@ -10,5 +10,11 @@
     .weatherComponents {
         background-color: #eaeaea;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        align-content: flex-end;
     }
 }

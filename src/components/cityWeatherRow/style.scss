@@ -1,16 +1,49 @@
 .main {
     margin-top: 15px;
     padding: 20px;
-    display: inline-block;
 
     .weathercard {
         background: #eafbfc;
-        color: #000;
-        font-size: 16px;
+        color: #34363a;
+        font-size: 12px;
         width: 170px;
         height: 200px;
         padding: 15px;
         border-radius: 5px;
         display: inline-block;
+    }
+    .cityName {
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .cityTemp {
+        font-size: 26px;
+        text-align: center;
+        font-weight: 800;
+        span:after {
+            content: "°C";
+            font-size: 20px;
+            top: 0px;
+
+        }
+    }
+    .weatherIconText {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        display: flex;
+    }
+    .weatherDesc {
+        text-transform: capitalize;
+        text-align: center;
+        margin: 5px;
+    }
+    .extras span{
+        text-align: center;
+        &:first-child:after {
+            content: " | ";
+        }
     }
 }

@@ -14,22 +14,28 @@ export default class CityWeatherRow extends React.Component {
             // let weatherText = this.props.weather.weather
             <div className={styles.main}>
                 <div className={styles.weathercard}>
-                    <span>{this.props.city}</span>
-                    <ul>
-                        <li>Temp: {this.props.weather.main.temp}</li>
-                        <li>Pressure: {this.props.weather.main.pressure}</li>
-                        <li>Humidity: {this.props.weather.main.humidity}</li>
+                    <div className={styles.cityName}>{this.props.city}</div>
+                    
                                                 
-                        { this.props.weather.weather.map((text, index) => (
-                            <li key={index}>
-                                <span> weatherText: {text.main} </span>
-                                <span>weatherText: {text.description} </span>
-                                <span>weatherIcon: {text.icon} </span>
-                            </li>
-                        ))}
-                       
-                    </ul> 
+                    { this.props.weather.weather.map((text, index) => (
+                        <div key={index}>
+                            
+                            <div className={styles.weatherIconText}>
+                                <img src={"http://openweathermap.org/img/w/" + text.icon + ".png"} alt="Weather Icon" />
+                                <span>{text.main}</span> 
+                            </div>
+                            <div className={styles.cityTemp}>
+                                <span>{this.props.weather.main.temp}</span>
+                            </div>
+                            <div className={styles.weatherDesc}>{text.description} </div>
+                        </div>
+                    ))}
+                    <div className={styles.extras}>
+                        <span>Press: {this.props.weather.main.pressure}</span>
+                        <span>Hum: {this.props.weather.main.humidity}</span>
+                    </div>
                 </div>
+
             </div>
         );
     }
