@@ -2,28 +2,25 @@ import React from 'react';
 import styles from './style.scss';
 
 export default class Selector extends React.Component {
-    static propTypes = {
-        sortSelection: React.PropTypes.string.isRequired,
-        handleSelect: React.PropTypes.func.isRequired,
-    }
+  static propTypes = {
+    sortSelection: React.PropTypes.string.isRequired,
+    handleSelect: React.PropTypes.func.isRequired,
+  }
 
-    render() {
-        console.log(this.props.sortSelection);
-        return (
-            // let weatherText = this.props.weather.weather
-            <div className={styles.main}>
-                <select ref="selected" value={this.props.sortSelection} 
-                    onChange={ (e) => {
-                        console.log("sorting selected");
-                        const selected = this.refs.selected.value;
-                        this.props.handleSelect(selected);
-                    }}>
-                    <option value="name">City</option>
-                    <option value="temp">Temperature</option>
-                    <option value="pressure">Pressure</option>
-                    <option value="humidity">Humidity</option>
-                </select>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className={styles.main}>
+        <select ref="selected" value={this.props.sortSelection}
+          onChange={ () => {
+            const selected = this.refs.selected.value;
+            this.props.handleSelect(selected);
+            }}>
+            <option value="name">City</option>
+            <option value="temp">Temperature</option>
+            <option value="pressure">Pressure</option>
+            <option value="humidity">Humidity</option>
+        </select>
+      </div>
+    );
+  }
 }

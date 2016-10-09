@@ -1,8 +1,8 @@
 const UPDATE = 'UPDATE';
 
 const defaultState = {
-    cityName: "",
-}
+  cityName: '',
+};
 // Reducer
 export default function citySearch(state = defaultState, action) {
   if (action.type === UPDATE) {
@@ -14,6 +14,5 @@ export default function citySearch(state = defaultState, action) {
 
 // Action creator
 export function updateCity(cityName) {
-    return { type: UPDATE, cityName };
+  return { type: UPDATE, cityName };
 }
-
