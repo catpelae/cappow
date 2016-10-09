@@ -4,7 +4,7 @@ import styles from './style.scss';
 
 export default class CitySearch extends React.Component {
     static propTypes = {
-        city: React.PropTypes.number.isRequired,
+        city: React.PropTypes.string.isRequired,
         onChange: React.PropTypes.func.isRequired,
         onClick: React.PropTypes.func.isRequired,
     }
@@ -12,7 +12,7 @@ export default class CitySearch extends React.Component {
     render() {
         return (
             <div className={styles.main}>
-                <span className={styles.search}>Type in cities to compare</span>
+                <h4 className={styles.search}>Type in cities to compare</h4>
                 <input className={styles.input} ref="cityInput" type="text" value={this.props.city}  
                     onChange={ (e) => {
                         const inputValue = this.refs.cityInput.value;

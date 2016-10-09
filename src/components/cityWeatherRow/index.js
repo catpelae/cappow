@@ -9,16 +9,17 @@ export default class CityWeatherRow extends React.Component {
     }
 
     render() {
+        console.log(styles);
         return (
             // let weatherText = this.props.weather.weather
             <div className={styles.main}>
-                <div className="weathercard">
+                <div className={styles.weathercard}>
                     <span>{this.props.city}</span>
                     <ul>
                         <li>Temp: {this.props.weather.main.temp}</li>
-                        <li>MinTemp: {this.props.weather.main.temp_min}</li>
-                        <li>MaxTemp: {this.props.weather.main.temp_max}</li>
                         <li>Pressure: {this.props.weather.main.pressure}</li>
+                        <li>Humidity: {this.props.weather.main.humidity}</li>
+                                                
                         { this.props.weather.weather.map((text, index) => (
                             <li key={index}>
                                 <span> weatherText: {text.main} </span>

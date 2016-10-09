@@ -1,7 +1,10 @@
 const UPDATE = 'UPDATE';
 
+const defaultState = {
+    cityName: "",
+}
 // Reducer
-export default function citySearch(state = {}, action) {
+export default function citySearch(state = defaultState, action) {
   if (action.type === UPDATE) {
     return Object.assign({}, state, { cityName: action.cityName });
   }

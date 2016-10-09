@@ -3,15 +3,16 @@ import styles from './style.scss';
 
 export default class Selector extends React.Component {
     static propTypes = {
-        selection: React.PropTypes.string.isRequired,
+        sortSelection: React.PropTypes.string.isRequired,
         handleSelect: React.PropTypes.func.isRequired,
     }
 
     render() {
+        console.log(this.props.sortSelection);
         return (
             // let weatherText = this.props.weather.weather
             <div className={styles.main}>
-                <select ref="selected" value={this.props.selection} 
+                <select ref="selected" value={this.props.sortSelection} 
                     onChange={ (e) => {
                         console.log("sorting selected");
                         const selected = this.refs.selected.value;
@@ -19,8 +20,8 @@ export default class Selector extends React.Component {
                     }}>
                     <option value="name">City</option>
                     <option value="temp">Temperature</option>
-                    <option value="minTemp">MinTemp</option>
-                    <option value="maxTemp">MaxTemp</option>
+                    <option value="pressure">Pressure</option>
+                    <option value="humidity">Humidity</option>
                 </select>
             </div>
         );
