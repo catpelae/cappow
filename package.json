@@ -6,7 +6,7 @@
   "license": "MIT",
   "engines": {
     "node": "6.2.2"
-  }
+  },
   "scripts": {
     "build": "roc build",
     "dev": "roc dev",
