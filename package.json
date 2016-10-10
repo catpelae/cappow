@@ -4,6 +4,9 @@
   "description": "A comparative app for weather",
   "author": "Catalina Pelaez",
   "license": "MIT",
+  "engines": {
+    "node": "6.2.2"
+  }
   "scripts": {
     "build": "roc build",
     "dev": "roc dev",
