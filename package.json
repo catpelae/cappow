@@ -13,7 +13,9 @@
     "postinstall": "roc build"
   },
   "dependencies": {
-    "roc-package-web-app-react": "1.0.0-alpha.11"
+    "roc-package-web-app-react": "1.0.0-alpha.11",
+    "roc-package-web-app-react-dev": "^1.0.0-alpha.11",
+    "roc-plugin-style-sass": "^1.0.0-alpha.3"
   },
   "devDependencies": {
     "babel-eslint": "6.0.2",
