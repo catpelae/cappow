@@ -6,6 +6,13 @@
     }
     .searchComponents {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        align-content: flex-end;
+        
     }
     .weatherComponents {
         background-color: #eaeaea;

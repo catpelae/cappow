@@ -10,7 +10,8 @@ export default class Selector extends React.Component {
   render() {
     return (
       <div className={styles.main}>
-        <select ref="selected" value={this.props.sortSelection}
+        <label for="selector"> Sort by:</label>
+        <select id="selector" ref="selected" value={this.props.sortSelection}
           onChange={ () => {
             const selected = this.refs.selected.value;
             this.props.handleSelect(selected);
