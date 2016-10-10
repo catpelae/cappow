@@ -9,7 +9,8 @@
     "dev": "roc dev",
     "start": "roc start",
     "lint": "eslint .",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "postinstall": "roc build"
   },
   "dependencies": {
     "roc-package-web-app-react": "1.0.0-alpha.11"
