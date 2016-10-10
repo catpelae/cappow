@@ -74,7 +74,7 @@ export default class Start extends Component {
     return (
       <div className={ styles.main }>
         <div className="header">
-          <h1>CappaW</h1>
+          <h1>CappoW</h1>
           <h2>A Comparative weather app</h2>
         </div>
         

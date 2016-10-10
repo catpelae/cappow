@@ -1,8 +1,8 @@
 module.exports = {
   settings: {
     runtime: {
-      applicationName: 'CAppoW',
-      port: 3000,
+      applicationName: 'CappoW',
+      port: process.env.PORT || 3000,
       serve: ['public', 'build/client'],
       favicon: 'favicon.png',
     },
